@@ -1,3 +1,2 @@
-json.array! @total do |price|
-  json.extract! price, :total, :discount
-end
+json.total @total.total
+json.discount @total.discount
