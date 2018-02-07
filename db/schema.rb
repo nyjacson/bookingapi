@@ -10,11 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180207113229) do
+ActiveRecord::Schema.define(version: 20180207141154) do
 
   create_table "calculates", force: :cascade do |t|
     t.integer "total"
     t.integer "discount"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "compound_groups", force: :cascade do |t|
+    t.string "name"
+    t.integer "compoundid"
+    t.string "type"
+    t.date "startdate"
+    t.date "enddate"
+    t.time "starttime"
+    t.time "endtime"
+    t.string "deperture"
+    t.string "arrival"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

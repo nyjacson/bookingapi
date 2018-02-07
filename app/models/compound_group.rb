@@ -1,0 +1,2 @@
+class CompoundGroup < ApplicationRecord
+end
